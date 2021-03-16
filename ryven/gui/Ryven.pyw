@@ -9,8 +9,7 @@ from PySide2.QtWidgets import QApplication
 from contextlib import redirect_stdout, redirect_stderr
 
 
-if __name__ == '__main__':
-
+def main():
     # change directory to current to this file's location
     os.chdir(os.path.dirname(os.path.realpath(__file__)))
 
@@ -32,3 +31,7 @@ if __name__ == '__main__':
         mw.show()
 
         sys.exit(app.exec_())
+
+
+if __name__ == '__main__':
+    main()
