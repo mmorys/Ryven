@@ -5,3 +5,6 @@ notizen.md
 __pycache__/
 venv/
 temp/
+dist/
+build/
+*.egg-info
