@@ -20,8 +20,8 @@ import ryvencore_qt.src.conv_gui as rc_GUI
 
 class MainWindow(QMainWindow):
 
-    def __init__(self, config, window_theme: WindowTheme):
-        super(MainWindow, self).__init__()
+    def __init__(self, config, window_theme: WindowTheme, parent=None):
+        super(MainWindow, self).__init__(parent)
 
         self.session = None
         self.theme = window_theme
